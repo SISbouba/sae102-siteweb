@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE-siteweb</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="icon" type="image/x-icon" href="../images/favicon.ico">-->
+</head>
+<body>
+    <header id="main-header">
+        <div class="main-menu">
+            <h1 class="home-logo">Acceuil</h1>
+        </div>
+        <nav class="nav-buttons">
+            <button onclick="toggleNavMenu('sous-menu-desktop')" class="nav-toggle">&#9776;</button>
+            <button onclick="toggleDarkMode()" class="theme-toggle">&#9788;</button>
+        </nav>
+    </header>
+    <!-- Mobile Nav -->
+    <!--<section id="nav-sous-menu-mobile" class="sous-menu">
+        <div><h1>Navigation</h1></div>
+        <div>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>-->
+    <!-- /Mobile Nav -->
+
+
+    <!-- Desktop Nav -->
+    <section id="nav-sous-menu" class="sous-menu-desktop">
+        <div><h1>Navigation</h1></div>
+        <div>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- /Desktop Nav -->
+
+    <main>
+        <section class="main-content">
+            <h1>Bienvenue sur le site SAE-siteweb</h1>
+            <div class="content-sections">
+                <article class="c1-section">
+                    <h2>Titre 1</h2>
+                    <p>Texte 1.</p>
+                </article>
+
+                <article class="c2-section">
+                    <h2>Titre 2</h2>
+                    <p>Texte 2.</p>
+                </article>
+
+                <article class="c3-section">
+                    <h2>Titre 3</h2>
+                    <p>Texte 3</p>
+                    <a href="formulaire.html" class="cta-button">Contactez-nous</a>
+                </article>
+            </div>
+        </section>
+        <a href="#top" class="top-link" title="Revenir en haut de page" style="display: inline;">
+            <span class="fas fa-arrow-circle-up"></span>
+        </a>
+    </main>
+    <footer>
+        <p>&copy; 2024 SAE-siteweb. Tous droits réservés.</p>
+    </footer>
+    <script src="../javascript/script.js"></script>   
+</body>
+</html>

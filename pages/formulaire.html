@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE-siteweb</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="icon" type="image/x-icon" href="../images/favicon.ico">-->
+</head>
+<body>
+    <header id="main-header">
+        <div class="main-menu">
+            <h1 class="home-logo">Formulaire</h1>
+        </div>
+        <nav class="nav-buttons">
+            <button onclick="toggleNavMenu('sous-menu-desktop')" class="nav-toggle">&#9776;</button>
+            <button onclick="toggleDarkMode()" class="theme-toggle">&#9788;</button>
+        </nav>
+    </header>
+
+    <section id="nav-sous-menu" class="sous-menu-desktop">
+        <div><h1>Navigation</h1></div>
+        <div>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <main>
+        <section class="main-content">
+            <div class="form-content">
+                <h1>Formulaire de Contact</h1>
+                <form action="#" method="post">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <select name="sexe">
+                        <option>Homme</option>
+                        <option>Femme</option>
+                    </select>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>          
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SAE-siteweb. Tous droits réservés.</p>
+    </footer>
+    <a href="#top" class="top-link" title="Revenir en haut de page" style="display: inline;">
+        <span class="fas fa-arrow-circle-up"></span>
+    </a>
+    <script src="../javascript/script.js"></script>   
+</body>
+</html>
