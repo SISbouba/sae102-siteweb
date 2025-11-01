@@ -20,3 +20,16 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark-theme');
     }
 });
+
+// === Bouton "Retour en haut" ===
+window.addEventListener('scroll', () => {
+    const topButton = document.getElementById('topButton');
+    if (window.scrollY > 300) {
+        topButton.classList.add('show');
+    } else {
+        topButton.classList.remove('show');
+    }
+});
+
+// Scroll fluide déjà géré via CSS (scroll-behavior: smooth)
+

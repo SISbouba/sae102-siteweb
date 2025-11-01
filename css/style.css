@@ -150,9 +150,7 @@ main{
     gap: 24px;
 }
 
-.c1-section,
-.c2-section,
-.c3-section {
+.c-section {
     background: var(--color-bg);
     padding: 24px;
     border-radius: 15px;
@@ -269,4 +267,40 @@ footer{
     background-color: var(--primary-color);
     color: var(--color-text);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Bouton “Retour en haut” */
+.top-link {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--button-bg);
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.top-link.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.top-link:hover {
+    background: var(--button-hover-bg);
+    transform: translateY(-5px);
+}
+
 
