@@ -1,0 +1,39 @@
+:root{
+    --color-bg: #012973;
+    --primary-color: #305CDE;
+    --secondary-color: #4f6ef4;
+    --color-text: #ffffff;
+
+    --hover-bg: var(--secondary-color);
+    --elements-bg: var(--primary-color);
+    --button-bg: var(--primary-color);
+    --button-hover-bg: var(--secondary-color);
+
+    --nav-menu-bg: var(--primary-color);
+    --nav-menu-hover-bg: var(--secondary-color);
+
+    --font-family: 'Arial', sans-serif;
+}
+
+.dark-theme{
+    --color-bg: #551A8B;
+    --primary-color: #7851A9;
+    --secondary-color: #8c63bd;
+    --color-text: #ffffff;
+
+    --hover-bg: var(--secondary-color);
+    --elements-bg: var(--primary-color);
+    --button-bg: var(--primary-color);
+    --button-hover-bg: var(--secondary-color);
+
+    --nav-menu-bg: var(--primary-color);
+    --nav-menu-hover-bg: var(--secondary-color);
+
+    --font-family: 'Arial', sans-serif;
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+}
