@@ -4,11 +4,31 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page-Zones</title>
+    <title>Majora's Lost Archives</title>
+    <link rel="stylesheet" href="../css/styleAccueil.css">
+    <link rel="icon" type="image/ico" href="/images/majora-icon.ico">
 </head>
-
 <body>
-    <p>wsh</p>
+    <header id="main-header">
+        <h1 id="home-logo">Acceuil</h1>
+        <nav id="nav-buttons">
+            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
+            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
+            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+        </nav>
+    </header>
+    <!--Desktop Naviagtion-->
+    <section id="nav-sous-menu" class="sous-menu-desktop">
+        <div><h1>Navigation</h1></div>
+        <div>
+            <ul>
+                <li><a href="accueil.html">Acceuil</a></li>
+                <li><a href="contact.html">Formulaire</a></li>
+                <li><a href="archive.html">Archives</a></li>
+                <li><a href="zones.html">Zones</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--/Desktop Naviagtion-->
 </body>
-
 </html>
