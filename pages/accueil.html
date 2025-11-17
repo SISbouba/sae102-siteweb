@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majora's Lost Archives</title>
+    <link rel="stylesheet" href="../css/styleAccueil.css">
+    <link rel="icon" type="image/ico" href="/images/majora-icon.ico">
+</head>
+<body id="top">
+    <header id="main-header">
+        <h1 id="home-logo">Acceuil</h1>
+        <nav id="nav-buttons">
+            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
+            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
+            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+        </nav>
+    </header>
+
+    <!--Mobile Navigation-->
+    <section id="nav-sous-menu" class="sous-menu-desktop">
+        <div><h1>Navigation</h1></div>
+        <div>
+            <ul>
+                <li><a href="accueil.html">Acceuil</a></li>
+                <li><a href="contact.html">Formulaire</a></li>
+                <li><a href="archive.html">Archives</a></li>
+                <li><a href="zones.html">Zones</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--/Mobile Navigation-->
+
+    <!--Desktop Naviagtion-->
+    <section id="nav-sous-menu" class="sous-menu-desktop">
+        <div><h1>Navigation</h1></div>
+        <div>
+            <ul>
+                <li><a href="accueil.html">Acceuil</a></li>
+                <li><a href="contact.html">Formulaire</a></li>
+                <li><a href="archive.html">Archives</a></li>
+                <li><a href="zones.html">Zones</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--/Desktop Naviagtion-->
+
+    <!--<section id="hero-image"><img src="/images/themoon.svg" alt=""></section>-->
+    <main>
+        <section class="content-container">
+            <h2>Bienvenue dans le Lost Archives</h2>
+            <p id="welcome-word">
+                Salutation, bienvenue dans le Lost Archives de Zelda Majora's Mask
+            </p>
+        </section>
+        <section class="content-container">
+            <h2>Vous pouvez allez voir aussi : </h2>
+            <section id="outside-links-grid">
+                <div class="grid-item">
+                    <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Majora's_Mask">Fandom</a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.puissance-zelda.com/6-Majoras_Mask">Puissance Zelda</a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheLegendOfZeldaMajorasMask">TV Tropes</a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Majora's_Mask">Wikipedia</a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.zeldadungeon.net/wiki/The_Legend_of_Zelda:_Majora's_Mask">Zelda Dungeon</a>
+                </div>
+                <div class="grid-item">
+                    <a href=""></a>
+                </div>
+            </section>
+        </section>
+        <section class="content-container">
+            <h2>Temporaire</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SAE-siteweb. Tous droits réservés.</p>
+    </footer>
+    <a href="#top" class="top-link" id="topButton" title="Revenir en haut de page">
+        <span class="fas fa-arrow-circle-up"></span>
+    </a>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
