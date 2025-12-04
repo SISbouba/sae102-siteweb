@@ -1,8 +1,10 @@
 // Toggle navigation menu visibility
 function toggleNavMenu() {
-    const navMenu = document.querySelector('.sous-menu-mobile');
+    const navDesktopMenu = document.querySelector('.sous-menu-desktop');
+    const navMobileMenu = document.querySelector('.sous-menu-mobile');
     const overlay = document.getElementById('overlay');
-    navMenu.classList.toggle('active');
+    navMobileMenu.classList.toggle('active');
+    navDesktopMenu.classList.toggle('active');
     overlay.classList.toggle('active');
 }
 
