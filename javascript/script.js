@@ -4,6 +4,7 @@ function toggleNavMenu() {
     const overlay = document.getElementById('overlay');
     navMenu.classList.toggle('active');
     overlay.classList.toggle('active');
+    document.body.classList.toggle('sous-menu-open');
 }
 
 // Toggle dark/light theme
@@ -42,15 +43,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Scroll fluide déjà géré via CSS (scroll-behavior: smooth)
-
-// Empêcher le scroll du body quand le menu est ouvert
-const body = document.body;
-const observer = new MutationObserver(() => {
-    if (sidebar.classList.contains('active')) {
-        body.style.overflow = 'hidden';
-    } else {
-        body.style.overflow = '';
+function scrollToTop() {
+    if (window.scrollY > 500) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-});
-observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+}   

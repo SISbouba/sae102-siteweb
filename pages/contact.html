@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majora's Lost Archives</title>
-    <link rel="stylesheet" href="../css/styleAccueil.css">
+    <link rel="stylesheet" href="../css/styleFormulaire.css">
     <link rel="icon" type="image/ico" href="/images/majora-icon.ico">
 </head>
 <body id="top">
@@ -29,6 +29,7 @@
             </ul>
         </div>
     </section>
+    <div class="overlay" id="overlay"></div>
     <!-- /Menu Navigation--> 
 
     <main>
@@ -51,8 +52,8 @@
         </section>
     </main>
 
-    <a href="#top" class="top-link" id="topButton" title="Revenir en haut de page">
-        <span class="fas fa-arrow-circle-up"></span>
+    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+        <span class="arrow-circle-up"></span>
     </a>
     <footer>
         <section id="github-links">
@@ -65,6 +66,7 @@
             <img src="/images/amulogo.png" alt="Amu Images" class="footer-icon">
         </section>
     </footer>
+    
     <script src="../javascript/script.js"></script>
 </body>
 </html>
