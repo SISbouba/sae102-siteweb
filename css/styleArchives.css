@@ -164,11 +164,76 @@ body.sous-menu-open {
     visibility: visible;
 }
 
+/* Partie Principale */
+
 main {
     flex: 1;
     padding: 40px 80px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Style de la Barre de Recherche */
+
+#section-title {
+    text-align: center;
+    margin: 60px 0 20px;
+    font-size: 2em;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 900px;
+    width: 90%;
+    position: relative;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 50px 12px 15px;
+    border-radius: 50px;
+    border: 3px solid var(--border-color);
+    background-color: var(--elements-bg);
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+#search-input::placeholder {
+    color: rgba(212, 175, 55, 0.7);
+}
+
+#search-input:focus {
+    outline: none;
+    border: 3px solid var(--border-color);
+    background-color: var(--hover-bg);
+}
+
+#search-button {
+    position: absolute;
+    right: 15px;
+    margin: 0;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#search-button:hover {
+    transform: scale(1.1);
+}
+
+.search-icon {
+    width: 28px;
+    height: 28px;
 }
 
 

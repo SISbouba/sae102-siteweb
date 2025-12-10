@@ -11,9 +11,9 @@
     <header id="main-header">
         <h1 id="home-logo">Acceuil</h1>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Nav</button>
             <button onclick="toggleDarkMode()" class="buttons-toggle">Dark</button>
             <button onclick="toggleTraduction()" class="buttons-toggle">Eng</button>
+            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Nav</button>
         </nav>
     </header>
 
@@ -29,8 +29,46 @@
             </ul>
         </div>
     </section>
-    <!-- /Menu Navigation--> 
+    <!-- /Menu Navigation-->
 
+    <main>
+        
+        <h1 id="section-title">Images</h1>
+        <section class="search-container">
+            <search>
+                <form action="./search/">
+                    <input type="search" id="search-input" placeholder="Rechercher ..." aria-label="Rechercher un logiciel">
+                    <!--<button type="submit" id="search-button" aria-label="Rechercher">
+                        <img src="../images/icons/search.svg" alt="Rechercher" class="search-icon">
+                    </button>-->
+                </form>
+            </search>
+        </section>
+        <section class="content-container">
+            <section class="contents">
+                <h2>Archives de Majora's Mask</h2>
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <h3>Article 1</h3>
+                        <p>Ceci est un exemple d'article d'archive pour Majora's Mask.</p>
+                    </div>
+                    <div class="archive-item">
+                        <h3>Article 2</h3>
+                        <p>Ceci est un autre exemple d'article d'archive pour Majora's Mask.</p>
+                    </div>
+                    <div class="archive-item">
+                        <h3>Article 3</h3>
+                        <p>Encore un exemple d'article d'archive pour Majora's Mask.</p>
+                    </div>
+                    <div class="archive-item">
+                        <h3>Article 4</h3>
+                        <p>Un quatrième exemple d'article d'archive pour Majora's Mask.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
 
     <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
