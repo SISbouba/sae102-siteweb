@@ -18,31 +18,24 @@
         </nav>
     </header>
 
-    <!-- Menu Navigation--> 
-    <section id="nav-sous-menu" class="sous-menu">
-        <div><h1>Navigation</h1></div>
-        <div>
-            <ul>
-                <li><a href="accueil.html">Acceuil</a></li>
-                <li><a href="contact.html">Formulaire</a></li>
-                <li><a href="archive.html">Archives</a></li>
-                <li><a href="zones.html">Zones</a></li>
-            </ul>
-        </div>
-    </section>
-    <div class="overlay" id="overlay"></div>
-    <!-- /Menu Navigation--> 
-
     <h1 class="Titre-zone">Le Pic des Neiges</h1>
 
-    <search>
-        <form action="/pages/">
-            <input type="search" id="mob-search" name="q" />
-            <button type="submit">Rechercher</button>
-        </form>
-    </search>
+        <!-- Menu Navigation--> 
+        <section id="nav-sous-menu" class="sous-menu">
+            <div><h1>Navigation</h1></div>
+            <div>
+                <ul>
+                    <li><a href="accueil.html">Acceuil</a></li>
+                    <li><a href="contact.html">Formulaire</a></li>
+                    <li><a href="archive.html">Archives</a></li>
+                    <li><a href="zones.html">Zones</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="overlay" id="overlay"></div>
+        <!-- /Menu Navigation--> 
 
-    <section class="description-zone">
+    <div class="description-zone">
         <section id="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
@@ -65,9 +58,13 @@
             </ul>
             <h3 class="nom-section">PNJ</h3>
             <ul class="liste-images">
+                <li><img src="../images/goron.png" alt="gorons"></li>
+                <li><img src="../images/OoT3D_Medigoron_Model.webp" alt="medigoron"></li>
+                <li><img src="../images/MM_Goron_with_Don_Gero's_Mask_Model.webp" alt="Don gero"></li>
+                <li><img src="../images/Zubora_Gabora_MM.webp" alt="zubora et gabora"></li>
             </ul>
         </section>
-    </section>
+    </div>
 
     <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
@@ -75,13 +72,15 @@
     <footer>
         <section id="github-links">
             <h3>Nos Github : </h3>
-            <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
-            <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
-            <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            <ul>
+                <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
+                <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
+                <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            </ul>
         </section>
-        <section id="amu-images">
+        <div id="amu-images">
             <img src="/images/amulogo.png" alt="Amu Images" class="footer-icon">
-        </section>
+        </div>
     </footer>
     
     <script src="../javascript/script.js"></script>

@@ -305,7 +305,7 @@ footer img {
 }
 
 .liste-images li {
-    width: 160px;                 /* taille uniforme */
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
