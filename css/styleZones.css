@@ -343,8 +343,28 @@ footer img {
     display: block;
 }
 
+.ennemies ul {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--color-text);
+}
 
-/* Navigation Version Mobile */
+.liste-images-zone {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--color-text);
+}
+
 @media screen and (max-width: 420px){
     header {
         background-color: var(--primary-color);
