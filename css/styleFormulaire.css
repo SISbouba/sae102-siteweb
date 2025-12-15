@@ -349,7 +349,6 @@ footer img {
 }
 
 
-/* Navigation Version Mobile */
 @media screen and (max-width: 420px){
     header {
         z-index: 4;
@@ -403,7 +402,6 @@ footer img {
         padding: 40px 20px;
         max-width: 350px;
         margin: 0 auto;
-<<<<<<< HEAD
     }   
 
     .content-container {
@@ -528,9 +526,6 @@ footer img {
         width: 100px;
         margin-top: 10px;
     }
-
-    
-
 }
 
 .form-container {
@@ -541,6 +536,8 @@ footer img {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .form-group {
@@ -566,19 +563,6 @@ textarea {
     font-size: 14px;
     outline: none;
     transition: all 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    background: white;
-    transform: translateY(-2px);
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-    font-family: Arial, sans-serif;
 }
 
 .radio-group {
@@ -618,7 +602,7 @@ textarea {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .form-container button:hover {

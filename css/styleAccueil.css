@@ -309,8 +309,6 @@ footer img {
     margin-top: 10px;
 }
 
-
-/* Navigation Version Mobile */
 @media screen and (max-width: 420px){
     header {
         z-index: 4;
