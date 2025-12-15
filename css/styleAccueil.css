@@ -282,7 +282,7 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/images/fleche_haut.svg') center/contain no-repeat;
+    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
 }
 
 

@@ -169,7 +169,7 @@ body.sous-menu-open {
 main {
     flex: 1;
     padding: 40px 80px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -261,7 +261,7 @@ main {
 
 .archive-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 25px;
     margin-top: 20px;
 }
@@ -332,7 +332,7 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/fleche_haut.svg') center/contain no-repeat;
+    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
 }
 
 
