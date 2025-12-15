@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleArchives.css">
-    <link rel="icon" type="image/ico" href="/images/majora-icon.ico">
+    <link rel="icon" type="image/ico" href="/ressources/majora-icon.ico">
 </head>
 <body id="top">
     <header id="main-header">
         <a href="accueil.html"><h1 class="home-logo">Acceuil</h1></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Nav</button>
             <button onclick="toggleDarkMode()" class="buttons-toggle">Dark</button>
             <button onclick="toggleTraduction()" class="buttons-toggle">Eng</button>
+            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Nav</button>
         </nav>
     </header>
 
@@ -28,7 +28,85 @@
             </ul>
         </div>
     </section>
+    <!-- /Menu Navigation-->
     <div class="overlay" id="overlay"></div>
+    <main>
+        <section class="search-container">
+            <search>
+                <form action="./search/">
+                    <input type="search" id="search-input" placeholder="Rechercher ..." aria-label="Rechercher un logiciel">
+                    <!--<button type="submit" id="search-button" aria-label="Rechercher">
+                        <img src="../ressources/icons/search.svg" alt="Rechercher" class="search-icon">
+                    </button>-->
+                </form>
+            </search>
+        </section>
+        <!--Partie Images-->
+        <section class="content-container">
+            <section class="contents">
+                <h1 id="section-title">Images</h1>
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                         <video src="a">
+                            <source src="../ressources/archives/image1.jpg" type="image/jpg">
+                            <track kind="captions" srclang="fr" label="French">
+                         </video>
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--Partie Vidéos-->
+        <section class="content-container">
+            <section class="contents">
+                <h1 id="section-title">Vidéos</h1>
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--Partie Musique-->
+        <section class="content-container">
+            <section class="contents">
+                <h1 id="section-title">Musiques</h1>
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                    <div class="archive-item">
+                        <!-- [Item] -->
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
 
     <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
@@ -41,7 +119,7 @@
             <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
         </section>
         <section id="amu-images">
-            <img src="/images/amulogo.png" alt="Amu Images" class="footer-icon">
+            <img src="/ressources/amulogo.png" alt="Amu Images" class="footer-icon">
         </section>
     </footer>
     
