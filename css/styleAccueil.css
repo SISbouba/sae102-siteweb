@@ -71,7 +71,7 @@ header {
     font-size: 14px;
 }
 
-#home-logo {
+.home-logo {
     width: 60px;
     height: 60px;
     background: url('/ressources/images/majora-icon.png') center/contain no-repeat;
@@ -309,8 +309,6 @@ footer img {
     margin-top: 10px;
 }
 
-
-/* Navigation Version Mobile */
 @media screen and (max-width: 420px){
     header {
         z-index: 4;

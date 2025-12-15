@@ -51,7 +51,7 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 1000px;
     background-color: var(--color-bg);
     font-family: Arial, sans-serif;
     color: var(--color-text);
@@ -69,6 +69,12 @@ header {
     position: relative;
     z-index: 3;
     font-size: 14px;
+}
+
+.home-logo {
+    width: 60px;
+    height: 60px;
+    background: url('/ressources/images/majora-icon.png') center/contain no-repeat;
 }
 
 .nav-buttons {
@@ -256,103 +262,47 @@ main {
     transition: all 0.3s ease;
 }
 
-.outside-links-grid {
+.image-zones-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 25px;
     margin-top: 20px;
 }
 
-.link-item {
-    text-align: center;
-    padding: 40px 20px;
-    background: #D4AF37;
+.zone-item {
+    position: relative;
+    overflow: hidden;
     border-radius: 25px;
-    border: 2px solid var(--border-color);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 120px;
+    height: 250px;
 }
 
-.link-item a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
+.zone-item img {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
 }
 
-.link-item:hover {
-    background: #FAD25A;
-    transform: translateY(-5px) scale(1.05);
-    transition: all 0.3s ease;
-    border: 2px solid #000000;
-}
-
-.top-link {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--button-bg);
-    color: var(--color-text);
-    border: 2px solid var(--border-color);
-    border-radius: 0;
+.zone-item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
-    font-size: 24px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    z-index: 5;
+    padding-bottom: 20px;
 }
 
-.top-link.show {
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.3s ease;
-}
-
-.arrow-circle-up {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url('/ressources/images/fleche_haut.svg') center/contain no-repeat;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    text-align: left;
-    padding: 0.2em;
-    background: var(--elements-bg);
-    border: var(--border-color) 1px solid;
-    margin-top: 20px;
-    z-index: 3;
-}
-
-footer h2, footer li, footer a {
-    color: var(--color-text);
-    text-decoration: none;
-    list-style: none;
-}
-
-footer img {
-    width: 100px;
-    margin-top: 10px;
+.zone-item:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .map-globale {
@@ -388,6 +338,13 @@ footer img {
     gap: 20px;
 }
 
+.liste-images img:hover {
+    background: #FAD25A;
+    transform: translateY(-5px) scale(1.05);
+    transition: all 0.3s ease;
+    border: 2px solid #000000;
+}
+
 .liste-images-zone {
     list-style: none;
     margin: 20px auto;
@@ -400,7 +357,6 @@ footer img {
 .liste-images img {
     width: 100%;
     height: 160px;
-    border-radius: 80px;
     display: block;
 }
 
@@ -411,8 +367,88 @@ footer img {
     display: block;
 }
 
+.ennemies ul {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--color-text);
+}
 
-/* Navigation Version Mobile */
+.liste-images-zone {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--color-text);
+}
+
+.top-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--button-bg);
+    color: var(--color-text);
+    border: 2px solid var(--border-color);
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.top-link.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.arrow-circle-up {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+    padding: 0.2em;
+    background: var(--elements-bg);
+    border: var(--border-color) 1px solid;
+    margin-top: 20px;
+    z-index: 3;
+}
+
+footer h2, footer li, footer a {
+    color: var(--color-text);
+    text-decoration: none;
+    list-style: none;
+}
+
+footer img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+
 @media screen and (max-width: 420px){
     header {
         z-index: 4;
@@ -468,11 +504,10 @@ footer img {
         margin: 0 auto;
     }
     
-    .outside-links-grid {
+    .image-zones-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
         gap: 25px;
-        margin: 20px 0;
+        margin-top: 20px;
     }
 }

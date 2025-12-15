@@ -9,7 +9,7 @@
 </head>
 <body id="top">
     <header id="main-header">
-        <h1 id="home-logo"></h1>
+        <h1 class="home-logo"></h1>
         <nav id="nav-buttons">
             <button onclick="toggleDarkMode()" class="buttons-toggle">Dark</button>
             <button onclick="toggleTraduction()" class="buttons-toggle">Eng</button>
@@ -17,7 +17,6 @@
         </nav>
     </header>
 
-    <!-- Menu Navigation--> 
     <section id="nav-sous-menu" class="sous-menu">
         <div><h1>Navigation</h1></div>
         <div>
@@ -29,7 +28,7 @@
             </ul>
         </div>
     </section>
-    <!-- /Menu Navigation--> 
+    <div class="overlay" id="overlay"></div>
 
     <section class="hero-image" alt="Image Principal"></section>
     <div class="overlay" id="overlay"></div>
@@ -78,6 +77,7 @@
     <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
+
     <footer>
         <section id="github-links">
             <h3>Nos Github : </h3>

@@ -71,11 +71,18 @@ header {
     font-size: 14px;
 }
 
+.home-logo {
+    width: 60px;
+    height: 60px;
+    background: url('/ressources/images/majora-icon.png') center/contain no-repeat;
+}
+
 .nav-buttons {
     display: flex;
     gap: 15px;
     position: relative;
 }
+
 .buttons-toggle {
     color: var(--text-color);
     background:var(--button-bg);
