@@ -624,7 +624,4 @@ textarea {
 .form-container button:hover {
     background: var(--button-hover-bg);
     transform: translateY(-3px);
-=======
-    } 
->>>>>>> origin/optimise
 }
