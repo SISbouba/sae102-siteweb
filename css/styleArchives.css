@@ -177,7 +177,7 @@ main {
 
 #section-title {
     text-align: center;
-    margin: 60px 0 20px;
+    /*margin: 60px 0 20px;*/
     font-size: 2em;
 }
 
@@ -259,14 +259,14 @@ main {
     transition: all 0.3s ease;
 }
 
-.outside-links-grid {
+.archive-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-top: 20px;
 }
 
-.link-item {
+.archive-item {
     text-align: center;
     padding: 40px 20px;
     background: #D4AF37;
@@ -280,7 +280,7 @@ main {
     min-height: 120px;
 }
 
-.link-item a {
+.archive-item a {
     color: #000000;
     text-decoration: none;
     font-size: 18px;
@@ -292,7 +292,7 @@ main {
     justify-content: center;
 }
 
-.link-item:hover {
+.archive-item:hover {
     background: #FAD25A;
     transform: translateY(-5px) scale(1.05);
     transition: all 0.3s ease;
@@ -326,6 +326,13 @@ main {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.3s ease;
+}
+
+.arrow-circle-up {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/images/fleche_haut.svg') center/contain no-repeat;
 }
 
 
@@ -489,14 +496,14 @@ footer img {
         transition: all 0.3s ease;
     }
 
-    .outside-links-grid {
+    /*.archive-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         margin-top: 20px;
     }
     
-    .link-item {
+    .archive-item {
         text-align: center;
         padding: 40px 20px;
         background: #D4AF37;
@@ -510,7 +517,7 @@ footer img {
         min-height: 120px;
     }
 
-    .link-item a {
+    .archive-item a {
         color: #000000;
         text-decoration: none;
         font-size: 16px;
@@ -522,11 +529,12 @@ footer img {
         justify-content: center;
     }
 
-    .link-item:hover {
+    .archive-item:hover {
         background: #FAD25A;
         transform: translateY(-5px) scale(1.05);
         transition: all 0.3s ease;
     }
+    */
 
     .top-link {
         position: fixed;
