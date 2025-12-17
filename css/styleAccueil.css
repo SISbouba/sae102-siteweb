@@ -9,6 +9,7 @@
     --button-bg: var(--primary-color);
     --button-hover-bg: var(--secondary-color);
     --border-color: #4f6ef4;
+    --theme-mode-button: url(../ressources/icons/light-icon.png);
 
     --glass-elements: rgba(255, 255, 255, 0.15);
     --glass-elements-low: rgba(255, 255, 255, 0.1);
@@ -35,6 +36,7 @@
     --button-bg: var(--primary-color);
     --button-hover-bg: var(--secondary-color);
     --border-color: #8c63bd;
+    --theme-mode-button: url(../ressources/icons/dark-icon.png);
 
     --nav-menu-bg: var(--primary-color);
     --nav-menu-hover-bg: var(--secondary-color);
@@ -56,8 +58,18 @@ body{
     font-family: Arial, sans-serif;
     color: var(--color-text);
     overflow-x: hidden;
+    position: relative;
 }
 
+.hero-image {
+    width: 100%;
+    height: 400px;
+    background: url('/ressources/images/the_moon-min.png') center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 header {
     background-color: var(--primary-color);
@@ -69,6 +81,7 @@ header {
     position: relative;
     z-index: 3;
     font-size: 14px;
+    backdrop-filter: blur(10px);
 }
 
 .home-logo {
@@ -77,12 +90,7 @@ header {
     background: url('/ressources/images/majora-icon.png') center/contain no-repeat;
 }
 
-.hero-image {
-    width: 100%;
-    height: 300px;
-    background: url('/ressources/images/the_moon-min.png') center/contain no-repeat;
-    margin-bottom: 20px;
-}
+
 
 .nav-buttons {
     display: flex;
@@ -107,6 +115,13 @@ header {
     transition: all 0.3s ease;
 }
 
+#navMenuButton {
+    display: none;
+    background: url(../ressources/icons/nav-logo.png);
+    border: none;
+    cursor: pointer;
+}
+
 .sous-menu {
     display: none;
     position: sticky;   
@@ -128,12 +143,6 @@ body.sous-menu-open {
     overflow: hidden;
     position: fixed;
     width: 100%;
-}
-
-.sous-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 .sous-menu ul {
@@ -181,7 +190,7 @@ body.sous-menu-open {
 
 main {
     flex: 1;
-    padding: 40px 80px;
+    padding: 420px 80px 40px 80px;
     max-width: 1200px;
     margin: 0 auto;
 }
