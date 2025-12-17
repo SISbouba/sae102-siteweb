@@ -5,101 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleAccueil.css">
-    <link rel="icon" type="image/ico" href="/images/majora-icon.ico">
+    <link rel="icon" type="image/ico" href="/ressources/images/majora-icon.ico">
+    <meta name="description" content="Bienvenue dans le Lost Archives de Zelda Majora's Mask. Découvrez des vidéos, images et informations sur ce jeu culte.">
 </head>
 <body id="top">
     <header id="main-header">
-        <h1 id="home-logo">Acceuil</h1>
+        <a href="accueil.html" aria-label="Retour à l'accueil"><img class="home-logo" src="/ressources/images/majora-icon.png" alt="Logo Majora"></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Nav</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark</button>
-            <button onclick="toggleTraduction()" class="buttons-toggle">Eng</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark</button>
+            <button id="navMenuBtn" class="buttons-toggle">Nav</button>
         </nav>
     </header>
 
-    <!--Mobile Navigation-->
-    <section id="nav-sous-menu" class="sous-menu-mobile">
-        <div><h1>Navigation</h1></div>
+    <nav id="nav-sous-menu" class="sous-menu">
+        <div><h2>Navigation</h2></div>
         <div>
             <ul>
-                <li><a href="accueil.html">Acceuil</a></li>
+                <!--<li><a href="accueil.html">Acceuil</a></li>-->
                 <li><a href="contact.html">Formulaire</a></li>
                 <li><a href="archive.html">Archives</a></li>
                 <li><a href="zones.html">Zones</a></li>
             </ul>
         </div>
-    </section>
-    <!--/Mobile Navigation-->
-
-    <!--Desktop Naviagtion-->
-    <section id="nav-sous-menu" class="sous-menu-desktop">
-        <div><h1>Navigation</h1></div>
-        <div>
-            <ul>
-                <li><a href="accueil.html">Acceuil</a></li>
-                <li><a href="contact.html">Formulaire</a></li>
-                <li><a href="archive.html">Archives</a></li>
-                <li><a href="zones.html">Zones</a></li>
-            </ul>
-        </div>
-    </section>
-    <!--/Desktop Naviagtion-->
-
-    <!--<section id="hero-image"><img src="/images/themoon.svg" alt=""></section>-->
+    </nav>
     <div class="overlay" id="overlay"></div>
+
+    <div class="hero-image"></div>
+
     <main>
         <section class="content-container">
             <section class="contents">
                 <h2>Bienvenue dans le Lost Archives</h2>
                 <p id="welcome-word">
-                    Salutation, bienvenue dans le Lost Archives de Zelda Majora's Mask
+                    Salutation, bienvenue dans le Lost Archives de Zelda Majora's Mask dont laquelle vous pourrez retrouver des vidéos, images et informations sur ce jeu culte sorti en 2000 sur Nintendo 64. 
                 </p>
             </section>
         </section>
         <section class="content-container">
             <section class="contents">
                 <h2>Vous pouvez allez voir aussi : </h2>
-                <section id="outside-links-grid">
-                    <div class="grid-item">
-                        <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Majora's_Mask">Fandom</a>
+                <section class="outside-links-grid">
+                    <div class="link-item">
+                        <a href="https://zelda.fandom.com/wiki/The_Legend_of_Zelda:_Majora's_Mask" rel="noopener noreferrer">Fandom</a>
                     </div>
-                    <div class="grid-item">
-                        <a href="https://www.puissance-zelda.com/6-Majoras_Mask">Puissance Zelda</a>
+                    <div class="link-item">
+                        <a href="https://www.puissance-zelda.com/6-Majoras_Mask" rel="noopener noreferrer">Puissance Zelda</a>
                     </div>
-                    <div class="grid-item">
-                        <a href="https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheLegendOfZeldaMajorasMask">TV Tropes</a>
+                    <div class="link-item">
+                        <a href="https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheLegendOfZeldaMajorasMask" rel="noopener noreferrer">TV Tropes</a>
                     </div>
-                    <div class="grid-item">
-                        <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Majora's_Mask">Wikipedia</a>
+                    <div class="link-item">
+                        <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Majora's_Mask" rel="noopener noreferrer">Wikipedia</a>
                     </div>
-                    <div class="grid-item">
-                        <a href="https://www.zeldadungeon.net/wiki/The_Legend_of_Zelda:_Majora's_Mask">Zelda Dungeon</a>
+                    <div class="link-item">
+                        <a href="https://www.zeldadungeon.net/wiki/The_Legend_of_Zelda:_Majora's_Mask" rel="noopener noreferrer">Zelda Dungeon</a>
                     </div>
-                    <div class="grid-item">
-                        <a href=""></a>
+                    <div class="link-item">
+                        <a href="https://zeldacentral.com/games/majoras-mask/mask-collection-guide/" rel="noopener noreferrer">Zelda Central</a>
                     </div>
                 </section>
             </section>
         </section>
-        <section class="content-container">
-            <section class="contents">
-                <h2>Temporaire</h2>  
-            </section>
-        </section>
     </main>
 
-    <a href="#top" class="top-link" id="topButton" title="Revenir en haut de page">
-        <span class="fas fa-arrow-circle-up"></span>
+    <a id="topButton" class="top-link" title="Revenir en haut de page">
+        <span class="arrow-circle-up"></span>
     </a>
+
     <footer>
         <section id="github-links">
-            <h3>Nos Github : </h3>
-            <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
-            <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
-            <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            <h2>Nos Github : </h2>
+            <ul>
+                <li><a href="https://github.com/SISbouba" target="_blank" rel="noopener noreferrer" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
+                <li><a href="https://github.com/hugo-banti" target="_blank" rel="noopener noreferrer" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
+                <li><a href="https://github.com/Dartinxe" target="_blank" rel="noopener noreferrer" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            </ul>
         </section>
         <section id="amu-images">
-            <img src="/images/amulogo.png" alt="Amu Images" class="footer-icon">
+            <h2>Partenaires :</h2>
+            <img src="/ressources/images/amulogo.png" alt="Amu Images" class="footer-icon" loading="lazy">
         </section>
     </footer>
     
