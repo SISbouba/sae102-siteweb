@@ -188,16 +188,14 @@ body.sous-menu-open {
 main {
     flex: 1;
     padding: 40px 80px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1600px;
     width: 100%;
 }
 
 /* Style de la Barre de Recherche */
 
-#section-title {
+#section-title-1, #section-title-2 {
     text-align: center;
-    /*margin: 60px 0 20px;*/
     font-size: 2em;
 }
 

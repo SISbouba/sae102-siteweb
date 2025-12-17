@@ -1,6 +1,6 @@
 :root{
     --color-bg: #012973;
-    --primary-color: #305CDE;
+    --primary-color: rgb(48, 92, 222, 0.65);
     --secondary-color: #4f6ef4;
     --color-text: #fbf1de;
 
@@ -27,7 +27,7 @@
 
 .dark-theme{
     --color-bg: #551A8B;
-    --primary-color: #7851A9;
+    --primary-color: rgb(120, 81, 169, 0.65);
     --secondary-color: #8c63bd;
     --color-text: #fbf1de;
 
@@ -68,7 +68,6 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 
 header {
@@ -231,6 +230,18 @@ main {
     background: var(--elements-bg);
     transform: translateY(-5px) scale(1.02);
     transition: all 0.3s ease;
+}
+
+#section-title-1, #section-title-2,#section-title-3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#welcome-word {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .outside-links-grid {

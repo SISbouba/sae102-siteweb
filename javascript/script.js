@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
         navMenuBtn.addEventListener('click', toggleNavMenu);
     }
 
-    const topButtonLink = document.getElementById('topButtonLink');
+    const topButtonLink = document.getElementById('topButton');
     if (topButtonLink) {
         topButtonLink.addEventListener('click', scrollToTop);
     }
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // === Bouton "Retour en haut" ===
 window.addEventListener('scroll', () => {
-    const topButton = document.getElementById('topButtonLink');
+    const topButton = document.getElementById('topButton');
     if (window.scrollY > 300) {
         topButton.classList.add('show');
     } else {

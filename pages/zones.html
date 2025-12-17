@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="main-header">
-        <a href="accueil.html"><h1 class="home-logo"></h1></a>
+        <a href="accueil.html" aria-label="Retour à l'accueil"><img class="home-logo" src="/ressources/images/majora-icon.png" alt="Logo Majora"></a>
         <nav id="nav-buttons">
             <button id="darkModeBtn" class="buttons-toggle">Dark</button>
             <button id="navMenuBtn" class="buttons-toggle">Nav</button>
@@ -17,10 +17,9 @@
     </header>
 
     <section id="nav-sous-menu" class="sous-menu">
-        <h2>Navigation</h2>
+        <h1>Navigation</h1>
         <div>
             <ul>
-                <!--<li><a href="accueil.html">Acceuil</a></li>-->
                 <li><a href="contact.html">Formulaire</a></li>
                 <li><a href="archive.html">Archives</a></li>
                 <li><a href="zones.html">Zones</a></li>
@@ -31,36 +30,36 @@
     
     <h2><img class="map-globale" src="https://www.hebergeur-image.fr/uploads/20251117/056105989f44ea6925172487286e09cea06f28a2.jpg" alt="map globale"></h2>
 
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Rechercher une zone...">
-    </div>
+    <search class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher une zone..." aria-label="Barre de recherche">
+    </search>
 
-    <section class="content-container">
-        <section class="contents">
-            <section class="image-zones-grid" id="image-zones-grid">
-                <!-- <ul class="liste-images-zone">-->
-                    <div class="zone-item">
-                        <a href ="clock_town.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/0e51e8c426b42db27fa6708ed09eaeadb7cce339.jpg" alt="clock_town"></a>
-                    </div>
-                    <div class="zone-item">
-                        <a href ="swamp.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/7ce1c7c08f23b876247e962eb7faf038575ca600.jpg" alt="swamp"></a>
-                    </div>
-                    <div class="zone-item">
-                        <a href ="pic_des_neiges.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/56f4fefdbc4a0af8ce197ef96716ac6b8c0390ed.png" alt="snowhead"></a>
-                    </div>
-                    <div class="zone-item">
-                        <a href ="plage.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/5df33f0b28310cfabe804f1657d7e87b433cdb21.txt" alt="beach"></a>
-                    </div>
-                    <div class="zone-item">
-                        <a href ="ikana.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/08ac833299e84bf0f5e305ed47db4c33ab2b6c32.txt" alt="ikana"></a>
-                    </div>
-                <!--</ul> -->
+    <main>
+        <section class="content-container">
+            <section class="contents">
+                <section class="image-zones-grid" id="image-zones-grid">
+                    <!-- <ul class="liste-images-zone">-->
+                        <div class="zone-item">
+                            <a href ="clock_town.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/0e51e8c426b42db27fa6708ed09eaeadb7cce339.jpg" alt="clock_town"></a>
+                        </div>
+                        <div class="zone-item">
+                            <a href ="swamp.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/7ce1c7c08f23b876247e962eb7faf038575ca600.jpg" alt="swamp"></a>
+                        </div>
+                        <div class="zone-item">
+                            <a href ="pic_des_neiges.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/56f4fefdbc4a0af8ce197ef96716ac6b8c0390ed.png" alt="snowhead"></a>
+                        </div>
+                        <div class="zone-item">
+                            <a href ="plage.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/5df33f0b28310cfabe804f1657d7e87b433cdb21.txt" alt="beach"></a>
+                        </div>
+                        <div class="zone-item">
+                            <a href ="ikana.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/08ac833299e84bf0f5e305ed47db4c33ab2b6c32.txt" alt="ikana"></a>
+                        </div>
+                    <!--</ul> -->
+                </section>
             </section>
         </section>
-    </section>
-    
-
-    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
+    </main>
+    <a id="topButton" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>
@@ -70,7 +69,10 @@
             <p><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></p>
             <p><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></p>
         </section>
+        <section id="amu-images">
+            <h2>Partenaires</h2>
             <img src="/ressources/images/amulogo.png" alt="Amu Images" class="footer-icon">
+        </section>
     </footer>
     
     <script src="../javascript/script.js"></script>
