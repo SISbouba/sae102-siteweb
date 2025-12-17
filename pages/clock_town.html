@@ -4,6 +4,7 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici Clock Town, la ville centrale de Majora's Mask.">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
     <link rel="icon" type="image/ico" href="/ressources/majora-icon.ico">
@@ -12,19 +13,18 @@
     <header id="main-header">
         <a href="accueil.html"><h1 class="home-logo"></h1></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
-            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>       
         </nav>
     </header>
 
     <h1 class="Titre-zone">Le Pic des Neiges</h1>
 
     <section id="nav-sous-menu" class="sous-menu">
-        <div><h1>Navigation</h1></div>
+        <h2>Navigation</h2>
         <div>
             <ul>
-                <li><a href="accueil.html">Acceuil</a></li>
+                <!--<li><a href="accueil.html">Acceuil</a></li>-->
                 <li><a href="contact.html">Formulaire</a></li>
                 <li><a href="archive.html">Archives</a></li>
                 <li><a href="zones.html">Zones</a></li>
@@ -33,7 +33,11 @@
     </section>
     <div class="overlay" id="overlay"></div>
 
-    <section class="description-zone">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher ...">
+    </div>
+
+    <section class="description-zone" id="image-zones-grid">
         <section class="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
@@ -62,15 +66,17 @@
         </section>
     </section>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>
         <section id="github-links">
-            <h3>Nos Github : </h3>
-            <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
-            <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
-            <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            <h2>Nos Github : </h2>
+            <ul>
+                <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
+                <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
+                <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            </ul>
         </section>
         <section id="amu-images">
             <img src="/ressources/images/amulogo.png" alt="Amu Images" class="footer-icon">

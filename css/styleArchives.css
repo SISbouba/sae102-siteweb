@@ -2,7 +2,7 @@
     --color-bg: #012973;
     --primary-color: #305CDE;
     --secondary-color: #4f6ef4;
-    --color-text: #D4AF37;
+    --color-text: #fbf1de;
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -28,7 +28,7 @@
     --color-bg: #551A8B;
     --primary-color: #7851A9;
     --secondary-color: #8c63bd;
-    --color-text: #D4AF37;
+    --color-text: #fbf1de;
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -84,7 +84,7 @@ header {
 }
 
 .buttons-toggle {
-    color: var(--text-color);
+    color: var(--color-text);
     background:var(--button-bg);
     border: var(--border-color) 1px solid;
     cursor: pointer;
@@ -92,6 +92,7 @@ header {
     padding: 12px 20px;
     border-radius: 15px;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .buttons-toggle:hover {
@@ -106,7 +107,6 @@ header {
     background: var(--glass-elements);
     backdrop-filter: var(--blur-elements);
     border: 1px solid var(--border-glass-elements);
-    box-shadow: var(--glass-shadow);
     border-radius: 15px;
     margin-top: 10px;
     padding: 15px;
@@ -129,22 +129,17 @@ body.sous-menu-open {
     margin: 0;
 }
 
-.sous-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 .sous-menu a {
     width: 100%;
     text-align: left;
     padding: 10px 15px;
     background: transparent;
     border: none;
-    color: var(--text-color);
+    color: var(--color-text);
     cursor: pointer;
     text-decoration: none;
     display: block;
+    font-weight: 500;
 }
 
 .sous-menu a:hover {
@@ -176,8 +171,9 @@ body.sous-menu-open {
 main {
     flex: 1;
     padding: 40px 80px;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Style de la Barre de Recherche */
@@ -211,7 +207,7 @@ main {
 }
 
 #search-input::placeholder {
-    color: rgba(212, 175, 55, 0.7);
+    color: rgba(251, 241, 222, 0.6);
 }
 
 #search-input:focus {
@@ -276,7 +272,7 @@ main {
 .archive-item {
     text-align: center;
     padding: 40px 20px;
-    background: #D4AF37;
+    background: #E8D4A8;
     border-radius: 25px;
     border: 2px solid var(--border-color);
     cursor: pointer;
@@ -285,6 +281,15 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 120px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.archive-item video,
+.archive-item audio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .archive-item a {
@@ -300,7 +305,7 @@ main {
 }
 
 .archive-item:hover {
-    background: #FAD25A;
+    background: #F5E6C8;
     transform: translateY(-5px) scale(1.05);
     transition: all 0.3s ease;
     border: 2px solid #000000;
@@ -355,10 +360,15 @@ footer {
     z-index: 3;
 }
 
-footer h2, footer li, footer a {
+footer h2, footer h3, footer li, footer a {
     color: var(--color-text);
     text-decoration: none;
+}
+
+footer ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer img {
@@ -382,7 +392,6 @@ footer img {
         background: var(--glass-elements);
         backdrop-filter: var(--blur-elements);
         border: 1px solid var(--border-glass-elements);
-        box-shadow: var(--glass-shadow);
         padding: 100px 20px 20px;
         transition: all 2s ease-in-out;
         z-index: 3;
@@ -405,7 +414,7 @@ footer img {
         padding: 10px 15px;
         background: transparent;
         border: none;
-        color: var(--text-color);
+        color: var(--color-text);
         cursor: pointer;
         text-decoration: none;
         display: block;

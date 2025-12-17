@@ -2,7 +2,7 @@
     --color-bg: #012973;
     --primary-color: #305CDE;
     --secondary-color: #4f6ef4;
-    --color-text: #D4AF37;
+    --color-text: #fbf1de;
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -28,7 +28,7 @@
     --color-bg: #551A8B;
     --primary-color: #7851A9;
     --secondary-color: #8c63bd;
-    --color-text: #D4AF37;
+    --color-text: #fbf1de;
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -174,30 +174,13 @@ main {
     flex: 1;
     padding: 40px 80px;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
-
-.content-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 20px 0;
-}
-
-.contents {
-    background: var(--elements-bg);
-    border-radius: 20px;
-    border: var(--border-color) 1px solid;
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.contents:hover {
-    background: var(--elements-bg);
-    transform: translateY(-5px) scale(1.02);
-    transition: all 0.3s ease;
+#title-name {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 /* Styles spécifiques au formulaire */

@@ -4,6 +4,7 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici la Zone Pic des Neiges">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
     <link rel="icon" type="image/ico" href="/ressources/majora-icon.ico">
@@ -12,9 +13,9 @@
     <header id="main-header">
         <a href="accueil.html"><h1 class="home-logo"></h1></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
-            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
+            
         </nav>
     </header>
 
@@ -35,18 +36,11 @@
         <div class="overlay" id="overlay"></div>
         <!-- /Menu Navigation--> 
 
-    <section class="search-container">
-        <search>
-            <form action="./search/">
-                <input type="search" id="search-input" placeholder="Rechercher ..." aria-label="Rechercher un logiciel">
-                <!--<button type="submit" id="search-button" aria-label="Rechercher">
-                    <img src="../ressources/icons/search.svg" alt="Rechercher" class="search-icon">
-                </button>-->
-            </form>
-        </search>
-    </section>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher ...">
+    </div>
 
-    <div class="description-zone">
+    <div class="description-zone" id="image-zones-grid">
         <section class="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
@@ -77,7 +71,7 @@
         </section>
     </div>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>

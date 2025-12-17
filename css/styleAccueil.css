@@ -2,7 +2,7 @@
     --color-bg: #012973;
     --primary-color: #305CDE;
     --secondary-color: #4f6ef4;
-    --color-text: #D4AF37;
+    --color-text: #fbf1de;
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -28,7 +28,7 @@
     --color-bg: #551A8B;
     --primary-color: #7851A9;
     --secondary-color: #8c63bd;
-    --color-text: #D4AF37;
+    --color-text: #fbf1de;
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -80,7 +80,7 @@ header {
 .hero-image {
     width: 100%;
     height: 300px;
-    background: url('/ressources/images/the_moon.png') center/contain no-repeat;
+    background: url('/ressources/images/the_moon-min.png') center/contain no-repeat;
     margin-bottom: 20px;
 }
 
