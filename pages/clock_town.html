@@ -4,77 +4,78 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici la Zone Pic des Neiges">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
     <link rel="icon" type="image/ico" href="/ressources/majora-icon.ico">
 </head>
 <body>
     <header id="main-header">
-        <a href="accueil.html"><h1 class="home-logo">Acceuil</h1></a>
+        <a href="accueil.html"><p class="home-logo"></p></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
-            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
+            
         </nav>
     </header>
 
-    <h1 class="Titre-zone">Le Pic des Neiges</h1>
+    <h1 class="Titre-zone">clock town</h1>
 
-    <section id="nav-sous-menu" class="sous-menu">
-        <div><h1>Navigation</h1></div>
-        <div>
-            <ul>
-                <li><a href="accueil.html">Acceuil</a></li>
-                <li><a href="contact.html">Formulaire</a></li>
-                <li><a href="archive.html">Archives</a></li>
-                <li><a href="zones.html">Zones</a></li>
-            </ul>
-        </div>
-    </section>
-    <div class="overlay" id="overlay"></div>
+        <!-- Menu Navigation--> 
+        <section id="nav-sous-menu" class="sous-menu">
+            <div><h2>Navigation</h2></div>
+            <div>
+                <ul>
+                    <li><a href="accueil.html">Acceuil</a></li>
+                    <li><a href="contact.html">Formulaire</a></li>
+                    <li><a href="archive.html">Archives</a></li>
+                    <li><a href="zones.html">Zones</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="overlay" id="overlay"></div>
+        <!-- /Menu Navigation--> 
 
-    <section class="description-zone">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher ...">
+    </div>
+
+    <div class="description-zone" id="image-zones-grid">
         <section class="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
-                <li><a href ="zone1.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/0e51e8c426b42db27fa6708ed09eaeadb7cce339.jpg" alt="clock_town"></a></li>
-                <li><a href ="zone2.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/7ce1c7c08f23b876247e962eb7faf038575ca600.jpg" alt="swamp"></a></li>
-                <li><a href ="pic_des_neiges.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/56f4fefdbc4a0af8ce197ef96716ac6b8c0390ed.png" alt="snowhead"></a></li>
-                <li><a href ="zone4.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/5df33f0b28310cfabe804f1657d7e87b433cdb21.txt" alt="beach"></a></li>
-                <li><a href ="zone5.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/08ac833299e84bf0f5e305ed47db4c33ab2b6c32.txt" alt="ikana"></a></li>
-            </ul>
-            <h3 class="nom-section">Boss/Mini Boss</h3>
-            <ul class="liste-images">
-                <li><a href ="zone1.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/0e51e8c426b42db27fa6708ed09eaeadb7cce339.jpg" alt="clock_town"></a></li>
-                <li><a href ="zone2.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/7ce1c7c08f23b876247e962eb7faf038575ca600.jpg" alt="swamp"></a></li>
-                <li><a href ="pic_des_neiges.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/56f4fefdbc4a0af8ce197ef96716ac6b8c0390ed.png" alt="snowhead"></a></li>
-                <li><a href ="zone4.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/5df33f0b28310cfabe804f1657d7e87b433cdb21.txt" alt="beach"></a></li>
-                <li><a href ="zone5.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/08ac833299e84bf0f5e305ed47db4c33ab2b6c32.txt" alt="ikana"></a></li>
+                <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku-baba"></li>
+                <li><img src="../ressources/images/308px-MM_Real_Bombchu_Model.png" alt="bombchu"></li>
+                <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
+                <li><img src="../ressources/images/Peahat_29.webp" alt="Peahat_29"></li>
+                <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
+                <li><img src="../ressources/images/takuri.png" alt="takuri"></li>
+                <li><img src="../ressources/images/Dodongo_MM.webp" alt="dodongo"></li>
             </ul>
             <h3 class="nom-section">PNJ</h3>
             <ul class="liste-images">
-                <li><a href ="zone1.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/0e51e8c426b42db27fa6708ed09eaeadb7cce339.jpg" alt="clock_town"></a></li>
-                <li><a href ="zone2.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/7ce1c7c08f23b876247e962eb7faf038575ca600.jpg" alt="swamp"></a></li>
-                <li><a href ="pic_des_neiges.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/56f4fefdbc4a0af8ce197ef96716ac6b8c0390ed.png" alt="snowhead"></a></li>
-                <li><a href ="zone4.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/5df33f0b28310cfabe804f1657d7e87b433cdb21.txt" alt="beach"></a></li>
-                <li><a href ="zone5.html"><img src="https://www.hebergeur-image.fr/uploads/20251117/08ac833299e84bf0f5e305ed47db4c33ab2b6c32.txt" alt="ikana"></a></li>
+                <li><img src="https://www.hebergeur-image.fr/uploads/20251217/d25e6b52192dffc562dfdf4ebb6faf82d3e4e897.txt" alt="great_fairy"></li>
+                <li><img src="https://www.hebergeur-image.fr/uploads/20251217/95c46287acf54f68e8a629e877403afc8a8800d1.txt" alt="skullkid"></li>
+                <li><img src="https://www.hebergeur-image.fr/uploads/20251217/f10b2fd586876c6e20156470176fece0070bea25.txt" alt="tingle"></li>
             </ul>
         </section>
-    </section>
+    </div>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>
         <section id="github-links">
             <h3>Nos Github : </h3>
-            <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
-            <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
-            <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            <ul>
+                <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
+                <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
+                <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            </ul>
         </section>
-        <section id="amu-images">
+        <div id="amu-images">
             <img src="/ressources/images/amulogo.png" alt="Amu Images" class="footer-icon">
-        </section>
+        </div>
     </footer>
     
     <script src="../javascript/script.js"></script>

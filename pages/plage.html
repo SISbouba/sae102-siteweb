@@ -10,18 +10,18 @@
 </head>
 <body>
     <header id="main-header">
-        <a href="accueil.html"><h1 class="home-logo">Acceuil</h1></a>
+        <a href="accueil.html"><p class="home-logo"></p></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
-            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
+            
         </nav>
     </header>
 
     <h1 class="Titre-zone">La plage</h1>
 
         <section id="nav-sous-menu" class="sous-menu">
-            <div><h1>Navigation</h1></div>
+            <div><h2>Navigation</h2></div>
             <div>
                 <ul>
                     <li><a href="accueil.html">Acceuil</a></li>
@@ -33,7 +33,11 @@
         </section>
         <div class="overlay" id="overlay"></div>
 
-    <div class="description-zone">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher ...">
+    </div>
+
+    <div class="description-zone" id="image-zones-grid">
         <section class="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
@@ -65,7 +69,7 @@
         </section>
     </div>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>

@@ -4,24 +4,26 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Voici la Zone Pic des Neiges">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
     <link rel="icon" type="image/ico" href="/ressources/majora-icon.ico">
 </head>
 <body>
     <header id="main-header">
-        <a href="accueil.html"><h1 class="home-logo">Acceuil</h1></a>
+        <a href="accueil.html"><p class="home-logo"></p></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
-            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
+            
         </nav>
     </header>
 
     <h1 class="Titre-zone">Le Pic des Neiges</h1>
 
+        <!-- Menu Navigation--> 
         <section id="nav-sous-menu" class="sous-menu">
-            <div><h1>Navigation</h1></div>
+            <div><h2>Navigation</h2></div>
             <div>
                 <ul>
                     <li><a href="accueil.html">Acceuil</a></li>
@@ -32,8 +34,13 @@
             </div>
         </section>
         <div class="overlay" id="overlay"></div>
+        <!-- /Menu Navigation--> 
 
-    <div class="description-zone">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher ...">
+    </div>
+
+    <div class="description-zone" id="image-zones-grid">
         <section class="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
@@ -44,17 +51,17 @@
                 <li><img src="../ressources/images/MM_Bad_Bat_Model-600x372.webp" alt="bad bat"></li>
                 <li><img src="../ressources/images/OoT_Dinolfos_Model.webp" alt="dinolfos"></li>
                 <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku baba"></li>
-                <li><img src="../ressources/images/eeno.jpg" alt="eeno"></li>
+                <li><img src="../ressources/images/eeno.png" alt="eeno"></li>
                 <li><img src="../ressources/images/214px-OoT_Freezard_Model.png" alt="freezard"></li>
                 <li><img src="../ressources/images/Blue_Tektiteewf2g2g2.webp" alt="tektite"></li>
                 <li><img src="../ressources/images/White_Wolfos_27s.webp" alt="wolfos"></li>
             </ul>
-            <h2 class="nom-section">Boss/Mini Boss</h3>
+            <h3 class="nom-section">Boss/Mini Boss</h3>
             <ul class="liste-images">
                 <li><img src="../ressources/images/MM_Goht_Model.webp" alt="goht"></li>
                 <li><img src="../ressources/images/MM_Wizzrobe_Model.webp" alt="wizzrobe"></li>
             </ul>
-            <h2 class="nom-section">PNJ</h3>
+            <h3 class="nom-section">PNJ</h3>
             <ul class="liste-images">
                 <li><img src="../ressources/images/goron.png" alt="gorons"></li>
                 <li><img src="../ressources/images/OoT3D_Medigoron_Model.webp" alt="medigoron"></li>
@@ -64,7 +71,7 @@
         </section>
     </div>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>

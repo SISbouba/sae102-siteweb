@@ -10,30 +10,33 @@
 </head>
 <body>
     <header id="main-header">
-        <a href="accueil.html"><h1 class="home-logo">Acceuil</h1></a>
+        <a href="accueil.html"><p class="home-logo"></p></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Navigation</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark Theme</button>
-            <button onclick="toggleTranslatation()" class="buttons-toggle">English</button>
+            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>       
         </nav>
     </header>
 
     <h1 class="Titre-zone">Bois Cascade</h1>
 
-        <section id="nav-sous-menu" class="sous-menu">
-            <div><h1>Navigation</h1></div>
-            <div>
-                <ul>
-                    <li><a href="accueil.html">Acceuil</a></li>
-                    <li><a href="contact.html">Formulaire</a></li>
-                    <li><a href="archive.html">Archives</a></li>
-                    <li><a href="zones.html">Zones</a></li>
-                </ul>
-            </div>
-        </section>
-        <div class="overlay" id="overlay"></div>
+    <section id="nav-sous-menu" class="sous-menu">
+        <h2>Navigation</h2>
+        <div>
+            <ul>
+                <!--<li><a href="accueil.html">Acceuil</a></li>-->
+                <li><a href="contact.html">Formulaire</a></li>
+                <li><a href="archive.html">Archives</a></li>
+                <li><a href="zones.html">Zones</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="overlay" id="overlay"></div>
     
-    <section class="description-zone">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher ...">
+    </div>
+    
+    <div class="description-zone" id="image-zones-grid">
         <section class="ennemies">
             <h2 class="nom-section">Enemies</h2>
             <ul class="liste-images">
@@ -52,36 +55,33 @@
                 <li><img src="../ressources/images/320px-TP_Guay_Model.png" alt="guay"></li>
                 <li><img src="../ressources/images/MM_Snapper29.webp" alt="snapper"></li>
             </ul>
-            <h2 class="nom-section">Boss/Mini Boss</h3>
+            <h3 class="nom-section">Boss/Mini Boss</h3>
             <ul class="liste-images">
                 <li><img src="../ressources/images/Gekko_Snapper.webp" alt="gekko_snapper"></li>
                 <li><img src="../ressources/images/Odolwa.webp" alt="Odolwa"></li>
             </ul>
-            <h2 class="nom-section">PNJ</h3>
+            <h3 class="nom-section">PNJ</h3>
             <ul class="liste-images">
-                <li><img src="../ressources/images/goron.png" alt="gorons"></li>
-                <li><img src="../ressources/images/OoT3D_Medigoron_Model.webp" alt="medigoron"></li>
-                <li><img src="../ressources/images/MM_Goron_with_Don_Gero's_Mask_Model.webp" alt="Don gero"></li>
-                <li><img src="../ressources/images/Zubora_Gabora_MM.webp" alt="zubora et gabora"></li>
-                <li><img src="../ressources/images/MM_Goron_with_Don_Gero's_Mask_Model.webp" alt="Don gero"></li>
-                <li><img src="../ressources/images/Zubora_Gabora_MM.webp" alt="zubora et gabora"></li>
+                <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
             </ul>
         </section>
-    </section>
+    </div>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButtonLink" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>
         <section id="github-links">
-            <h3>Nos Github : </h3>
-            <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
-            <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
-            <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            <h2>Nos Github : </h2>
+            <ul>
+                <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
+                <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
+                <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            </ul>
         </section>
-        <section id="amu-images">
+        <div id="amu-images">
             <img src="/ressources/images/amulogo.png" alt="Amu Images" class="footer-icon">
-        </section>
+        </div>
     </footer>
     
     <script src="../javascript/script.js"></script>
