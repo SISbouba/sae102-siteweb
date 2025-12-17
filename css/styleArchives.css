@@ -9,6 +9,7 @@
     --button-bg: var(--primary-color);
     --button-hover-bg: var(--secondary-color);
     --border-color: #4f6ef4;
+    --theme-mode-button: url(../ressources/icons/light-icon.png);
 
     --glass-elements: rgba(255, 255, 255, 0.15);
     --glass-elements-low: rgba(255, 255, 255, 0.1);
@@ -29,6 +30,7 @@
     --primary-color: #7851A9;
     --secondary-color: #8c63bd;
     --color-text: #fbf1de;
+    --theme-mode-button: url(../ressources/icons/dark-icon.png);
 
     --hover-bg: var(--secondary-color);
     --elements-bg: var(--primary-color);
@@ -84,20 +86,35 @@ header {
 }
 
 .buttons-toggle {
-    color: var(--color-text);
-    background:var(--button-bg);
+    color: transparent;
+    background-color: var(--button-bg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: var(--border-color) 1px solid;
     cursor: pointer;
     font-size: 14px;
     padding: 12px 20px;
     border-radius: 15px;
     transition: all 0.3s ease;
-    font-weight: 500;
+    width: 50px;
+    height: 50px;
+}
+
+#darkModeBtn {
+    background-image: var(--theme-mode-button);
+    border: none;
+    cursor: pointer;
+}
+
+#navMenuBtn {
+    background-image: url('/ressources/icons/nav-logo.png');
+    border: none;
+    cursor: pointer;
 }
 
 .buttons-toggle:hover {
-    background: var(--button-hover-bg);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1);
     transition: all 0.3s ease;
 }
 
