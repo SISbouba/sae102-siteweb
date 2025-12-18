@@ -85,18 +85,44 @@ header {
 .buttons-toggle {
     color: var(--text-color);
     background:var(--button-bg);
+    color: transparent;
+    background-color: var(--button-bg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: var(--border-color) 1px solid;
     cursor: pointer;
     font-size: 14px;
     padding: 12px 20px;
     border-radius: 15px;
     transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+
+#darkModeBtn {
+    background-image: var(--theme-mode-button);
+    border: none;
+    cursor: pointer;
+}
+
+
+#navMenuBtn {
+    background-image: url('/ressources/icons/nav-logo.png');
+    border: none;
+    cursor: pointer;
 }
 
 .buttons-toggle:hover {
-    background: var(--button-hover-bg);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1);
     transition: all 0.3s ease;
+}
+
+
+#navMenuButton {
+    display: none;
+    background: url(../ressources/icons/nav-logo.png);
 }
 
 .sous-menu {
