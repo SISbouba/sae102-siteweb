@@ -1,69 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majora's Lost Archives</title>
+    <meta name="description" content="Formulaire de contact pour Majora's Lost Archives. Envoyez-nous vos questions ou commentaires concernant Zelda Majora's Mask.">
+    <title>Formulaire de Contact</title>
     <link rel="stylesheet" href="../css/styleFormulaire.css">
-    <link rel="icon" type="image/ico" href="/images/majora-icon.ico">
+    <link rel="icon" type="image/ico" href="../ressources/icons/majora-icon.ico">
 </head>
-<body id="top">
+
+<body>
     <header id="main-header">
-        <h1 id="home-logo">Acceuil</h1>
+        <a href="../index.html" aria-label="Retour à l'accueil"><img class="home-logo" src="../ressources/icons/majora-icon.png" alt="Logo Majora"></a>
         <nav id="nav-buttons">
-            <button onclick="toggleNavMenu('sous-menu-desktop')" class="buttons-toggle">Nav</button>
-            <button onclick="toggleDarkMode()" class="buttons-toggle">Dark</button>
-            <button onclick="toggleTraduction()" class="buttons-toggle">Eng</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark</button>
+            <button id="navMenuBtn" class="buttons-toggle">Nav</button>
         </nav>
     </header>
-
-    <!-- Menu Navigation--> 
+    
+    <!-- Menu Navigation-->
     <section id="nav-sous-menu" class="sous-menu">
-        <div><h1>Navigation</h1></div>
+        <div><h2>Navigation</h2></div>
         <div>
             <ul>
-                <li><a href="accueil.html">Acceuil</a></li>
-                <li><a href="contact.html">Formulaire</a></li>
+                <li><a href="../index.html">Acceuil</a></li>
                 <li><a href="archive.html">Archives</a></li>
                 <li><a href="zones.html">Zones</a></li>
             </ul>
         </div>
     </section>
-    <div class="overlay" id="overlay"></div>
-    <!-- /Menu Navigation--> 
-
+    <!-- /Menu Navigation-->
     <main>
-        <section class="content-container">
-            <section class="contents">
-                <h2>Contactez-Nous</h2>
-                <form action="#" method="post" id="contact-form">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
+        <section class="form-container">
+            <h1 id="title-name">Contactez-Nous</h1>
+            <form action="mailto:hugobanti1007@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
 
-                    <label for="email">Email :</label>
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                </div>
 
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Sexe:</legend>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="homme" name="sexe" value="homme">
+                                <label for="homme">Homme</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="femme" name="sexe" value="femme">
+                                <label for="femme">Femme</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
 
-                    <button type="submit">Envoyer</button>
-                </form>
-            </section>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
-    <a onclick="scrollToTop()" class="top-link" id="topButton" title="Revenir en haut de page">
+    <a id="topButton" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>
     <footer>
         <section id="github-links">
-            <h3>Nos Github : </h3>
-            <li><a href="https://github.com/SISbouba" target="_blank" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
-            <li><a href="https://github.com/hugo-banti" target="_blank" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
-            <li><a href="https://github.com/Dartinxe" target="_blank" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            <h2>Nos Github : </h2>
+            <ul>
+                <li><a href="https://github.com/SISbouba" target="_blank" rel="noopener noreferrer" title="Lien vers le repo GitHub">Aboubakar-Sise</a></li>
+                <li><a href="https://github.com/hugo-banti" target="_blank" rel="noopener noreferrer" title="Lien vers le repo GitHub">Hugo-Banti</a></li>
+                <li><a href="https://github.com/Dartinxe" target="_blank" rel="noopener noreferrer" title="Lien vers le repo GitHub">Dartinxe</a></li>
+            </ul>
         </section>
         <section id="amu-images">
-            <img src="/images/amulogo.png" alt="Amu Images" class="footer-icon">
+            <h2>Partenaires</h2>
+            <img src="../ressources/images/amulogo.png" alt="Amu Images" class="footer-icon">
         </section>
     </footer>
     
