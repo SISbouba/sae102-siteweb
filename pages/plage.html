@@ -7,66 +7,70 @@
     <meta name="description" content="Voici la Zone de l'ocean">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
-    <link rel="icon" type="image/ico" href="../ressources/majora-icon.ico">
+    <link rel="icon" type="image/ico" href="../ressources/icons/majora-icon.ico">
 </head>
 <body>
     <header id="main-header">
         <a href="../index.html" aria-label="Retour à l'accueil"><img class="home-logo" src="../ressources/icons/majora-icon.png" alt="Logo Majora"></a>
         <nav id="nav-buttons">
-            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
-            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
+            <button id="darkModeBtn" class="buttons-toggle">Dark</button>
+            <button id="navMenuBtn" class="buttons-toggle">Nav</button>
         </nav>
     </header>
 
     <h1 class="Titre-zone">L'ocean</h1>
 
-        <section id="nav-sous-menu" class="sous-menu">
-            <div><h2>Navigation</h2></div>
-            <div>
-                <ul>
-                    <li><a href="contact.html">Formulaire</a></li>
-                    <li><a href="archive.html">Archives</a></li>
-                    <li><a href="zones.html">Zones</a></li>
+    <!-- Menu Navigation-->
+    <section id="nav-sous-menu" class="sous-menu">
+        <div><h2>Navigation</h2></div>
+        <div>
+            <ul>
+                <li><a href="contact.html">Formulaire</a></li>
+                <li><a href="archive.html">Archives</a></li>
+                <li><a href="zones.html">Zones</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="overlay" id="overlay"></div>
+    <!-- /Menu Navigation-->
+    <main>
+        <search class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher ...">
+        </search>
+
+        <div class="description-zone" id="image-zones-grid">
+            <section class="ennemies">
+                <h2 class="nom-section">Enemies</h2>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku-baba"></li>
+                    <li><img src="../ressources/images/MM3D_Dexihand_Model.webp" alt="dexihand"></li>
+                    <li><img src="../ressources/images/MM_Deep_Python_Model.webp" alt="deep-python"></li>
+                    <li><img src="../ressources/images/Desbreko.webp" alt="desbreko"></li>
+                    <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
+                    <li><img src="../ressources/images/MM_Leever_Model.png" alt="leever"></li>
+                    <li><img src="../ressources/images/Like-Like_MM.webp" alt="like-like"></li>
+                    <li><img src="../ressources/images/241px-OoT_Octorok_Model.png" alt="octoroc"></li>
+                    <li><img src="../ressources/images/308px-MM_Real_Bombchu_Model.png" alt="bombchu"></li>
+                    <li><img src="../ressources/images/320px-MM3D_Shell_Blade_Model.png" alt="shell-blade"></li>
+                    <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
                 </ul>
-            </div>
-        </section>
-        <div class="overlay" id="overlay"></div>
-
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Rechercher ...">
-    </div>
-
-    <div class="description-zone" id="image-zones-grid">
-        <section class="ennemies">
-            <h2 class="nom-section">Enemies</h2>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku-baba"></li>
-                <li><img src="../ressources/images/MM3D_Dexihand_Model.webp" alt="dexihand"></li>
-                <li><img src="../ressources/images/MM_Deep_Python_Model.webp" alt="deep-python"></li>
-                <li><img src="../ressources/images/Desbreko.webp" alt="desbreko"></li>
-                <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
-                <li><img src="../ressources/images/MM_Leever_Model.png" alt="leever"></li>
-                <li><img src="../ressources/images/Like-Like_MM.webp" alt="like-like"></li>
-                <li><img src="../ressources/images/241px-OoT_Octorok_Model.png" alt="octoroc"></li>
-                <li><img src="../ressources/images/308px-MM_Real_Bombchu_Model.png" alt="bombchu"></li>
-                <li><img src="../ressources/images/320px-MM3D_Shell_Blade_Model.png" alt="shell-blade"></li>
-                <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
-            </ul>
-            <h3 class="nom-section">Boss/Mini Boss</h3>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/MM_Wart_Model.webp" alt="wart"></li>
-                <li><img src="../ressources/images/Mad_Jelly.webp" alt="Mad_Jelly"></li>
-                <li><img src="../ressources/images/Gyorg_Render_MM.webp" alt="gyorg"></li>
-            </ul>
-            <h3 class="nom-section">PNJ</h3>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/beaver.png" alt="beaver"></li>
-                <li><img src="../ressources/images/dude.png" alt="dude"></li>
-                <li><img src="../ressources/images/640px-MM3D_Lulu_Model.png" alt="lulu"></li>
-                <li><img src="../ressources/images/MM_Mikau_Artwork.webp" alt="mikau"></li>
-            </ul>
-        </section>
-    </div>
+                <h3 class="nom-section">Boss/Mini Boss</h3>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/MM_Wart_Model.webp" alt="wart"></li>
+                    <li><img src="../ressources/images/Mad_Jelly.webp" alt="Mad_Jelly"></li>
+                    <li><img src="../ressources/images/Gyorg_Render_MM.webp" alt="gyorg"></li>
+                </ul>
+                <h3 class="nom-section">PNJ</h3>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/beaver.png" alt="beaver"></li>
+                    <li><img src="../ressources/images/dude.png" alt="dude"></li>
+                    <li><img src="../ressources/images/640px-MM3D_Lulu_Model.png" alt="lulu"></li>
+                    <li><img src="../ressources/images/MM_Mikau_Artwork.webp" alt="mikau"></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
 
     <a id="topButton" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>

@@ -7,15 +7,14 @@
     <meta name="description" content="Voici la Zone bourg-clocher">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
-    <link rel="icon" type="image/ico" href="../ressources/majora-icon.ico">
+    <link rel="icon" type="image/ico" href="../ressources/icons/majora-icon.ico">
 </head>
 <body>
     <header id="main-header">
         <a href="../index.html" aria-label="Retour à l'accueil"><img class="home-logo" src="../ressources/icons/majora-icon.png" alt="Logo Majora"></a>
         <nav id="nav-buttons">
-            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
-            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>
-            
+            <button id="darkModeBtn" class="buttons-toggle">Dark</button>
+            <button id="navMenuBtn" class="buttons-toggle">Nav</button>   
         </nav>
     </header>
 
@@ -33,31 +32,33 @@
     </section>
     <div class="overlay" id="overlay"></div>
 
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Rechercher ...">
-    </div>
+    <main>
+        <search class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher ...">
+        </search>
 
-    <div class="description-zone" id="image-zones-grid">
-        <section class="ennemies">
-            <h2 class="nom-section">Enemies</h2>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku-baba"></li>
-                <li><img src="../ressources/images/308px-MM_Real_Bombchu_Model.png" alt="bombchu"></li>
-                <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
-                <li><img src="../ressources/images/Peahat_29.webp" alt="Peahat_29"></li>
-                <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
-                <li><img src="../ressources/images/takuri.png" alt="takuri"></li>
-                <li><img src="../ressources/images/Dodongo_MM.webp" alt="dodongo"></li>
-            </ul>
-            <h3 class="nom-section">PNJ</h3>
-            <ul class="liste-images">
-                <li><img src="https://www.hebergeur-image.fr/uploads/20251217/d25e6b52192dffc562dfdf4ebb6faf82d3e4e897.txt" alt="great_fairy"></li>
-                <li><img src="https://www.hebergeur-image.fr/uploads/20251217/95c46287acf54f68e8a629e877403afc8a8800d1.txt" alt="skullkid"></li>
-                <li><img src="https://www.hebergeur-image.fr/uploads/20251217/f10b2fd586876c6e20156470176fece0070bea25.txt" alt="tingle"></li>
-            </ul>
-        </section>
-    </div>
-
+        <div class="description-zone" id="image-zones-grid">
+            <section class="ennemies">
+                <h2 class="nom-section">Enemies</h2>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku-baba"></li>
+                    <li><img src="../ressources/images/308px-MM_Real_Bombchu_Model.png" alt="bombchu"></li>
+                    <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
+                    <li><img src="../ressources/images/Peahat_29.webp" alt="Peahat_29"></li>
+                    <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
+                    <li><img src="../ressources/images/takuri.png" alt="takuri"></li>
+                    <li><img src="../ressources/images/Dodongo_MM.webp" alt="dodongo"></li>
+                </ul>
+                <h3 class="nom-section">PNJ</h3>
+                <ul class="liste-images">
+                    <li><img src="https://www.hebergeur-image.fr/uploads/20251217/d25e6b52192dffc562dfdf4ebb6faf82d3e4e897.txt" alt="great_fairy"></li>
+                    <li><img src="https://www.hebergeur-image.fr/uploads/20251217/95c46287acf54f68e8a629e877403afc8a8800d1.txt" alt="skullkid"></li>
+                    <li><img src="https://www.hebergeur-image.fr/uploads/20251217/f10b2fd586876c6e20156470176fece0070bea25.txt" alt="tingle"></li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
     <a id="topButton" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
     </a>

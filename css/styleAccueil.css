@@ -115,23 +115,21 @@ header {
     background-image: var(--theme-mode-button);
     border: none;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 #navMenuBtn {
     background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 .buttons-toggle:hover {
     transform: translateY(-3px) scale(1.1);
     transition: all 0.3s ease;
-}
-
-#navMenuButton {
-    display: none;
-    background: url(../ressources/icons/nav-logo.png);
-    
 }
 
 .sous-menu {

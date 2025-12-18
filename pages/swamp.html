@@ -7,14 +7,14 @@
     <meta name="description" content="Voici la Zone Bois Cascade">
     <title>Majora's Lost Archives</title>
     <link rel="stylesheet" href="../css/styleZones.css">
-    <link rel="icon" type="image/ico" href="../ressources/majora-icon.ico">
+    <link rel="icon" type="image/ico" href="../ressources/icons/majora-icon.ico">
 </head>
 <body>
     <header id="main-header">
         <a href="../index.html" aria-label="Retour à l'accueil"><img class="home-logo" src="../ressources/icons/majora-icon.png" alt="Logo Majora"></a>
         <nav id="nav-buttons">
-            <button id="darkModeBtn" class="buttons-toggle">Dark Theme</button>
-            <button id="navMenuBtn" class="buttons-toggle">Navigation</button>  
+            <button id="darkModeBtn" class="buttons-toggle">Dark</button>
+            <button id="navMenuBtn" class="buttons-toggle">Nav</button>  
         </nav>
     </header>
 
@@ -31,41 +31,44 @@
         </div>
     </section>
     <div class="overlay" id="overlay"></div>
-    
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Rechercher ...">
-    </div>
-    
-    <div class="description-zone" id="image-zones-grid">
-        <section class="ennemies">
-            <h2 class="nom-section">Enemies</h2>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/MM_Bad_Bat_Model-600x372.webp" alt="bat"></li>
-                <li><img src="../ressources/images/241px-OoT_Octorok_Model.png" alt="octoroc"></li>
-                <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku/baba"></li>
-                <li><img src="../ressources/images/MM_Giant_Bee_Model.webp" alt="bee"></li>
-                <li><img src="../ressources/images/MM_Black_Boe_Model.webp" alt="boe"></li>
-                <li><img src="../ressources/images/OoT_Dinolfos_Model.webp" alt="dinolfos"></li>
-                <li><img src="../ressources/images/320px-MM3D_Hiploop_Model.png" alt="hiploop"></li>
-                <li><img src="../ressources/images/Dragonfly.webp" alt="Dragonfly"></li>
-                <li><img src="../ressources/images/OoT_Mad_Scrub_Model.webp" alt="mad_scrub"></li>
-                <li><img src="../ressources/images/moth.png" alt="moth"></li>
-                <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
-                <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
-                <li><img src="../ressources/images/320px-TP_Guay_Model.png" alt="guay"></li>
-                <li><img src="../ressources/images/MM_Snapper29.webp" alt="snapper"></li>
-            </ul>
-            <h3 class="nom-section">Boss/Mini Boss</h3>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/Gekko_Snapper.webp" alt="gekko_snapper"></li>
-                <li><img src="../ressources/images/Odolwa.webp" alt="Odolwa"></li>
-            </ul>
-            <h3 class="nom-section">PNJ</h3>
-            <ul class="liste-images">
-                <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
-            </ul>
-        </section>
-    </div>
+
+    <main>
+        <search class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher ...">
+        </search>
+        
+        <div class="description-zone" id="image-zones-grid">
+            <section class="ennemies">
+                <h2 class="nom-section">Enemies</h2>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/MM_Bad_Bat_Model-600x372.webp" alt="bat"></li>
+                    <li><img src="../ressources/images/241px-OoT_Octorok_Model.png" alt="octoroc"></li>
+                    <li><img src="../ressources/images/202px-OoT_Big_Deku_Baba_Model.png" alt="deku/baba"></li>
+                    <li><img src="../ressources/images/MM_Giant_Bee_Model.webp" alt="bee"></li>
+                    <li><img src="../ressources/images/MM_Black_Boe_Model.webp" alt="boe"></li>
+                    <li><img src="../ressources/images/OoT_Dinolfos_Model.webp" alt="dinolfos"></li>
+                    <li><img src="../ressources/images/320px-MM3D_Hiploop_Model.png" alt="hiploop"></li>
+                    <li><img src="../ressources/images/Dragonfly.webp" alt="Dragonfly"></li>
+                    <li><img src="../ressources/images/OoT_Mad_Scrub_Model.webp" alt="mad_scrub"></li>
+                    <li><img src="../ressources/images/moth.png" alt="moth"></li>
+                    <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
+                    <li><img src="../ressources/images/MM_Green_Chuchu_Model.webp" alt="chuchu"></li>
+                    <li><img src="../ressources/images/320px-TP_Guay_Model.png" alt="guay"></li>
+                    <li><img src="../ressources/images/MM_Snapper29.webp" alt="snapper"></li>
+                </ul>
+                <h3 class="nom-section">Boss/Mini Boss</h3>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/Gekko_Snapper.webp" alt="gekko_snapper"></li>
+                    <li><img src="../ressources/images/Odolwa.webp" alt="Odolwa"></li>
+                </ul>
+                <h3 class="nom-section">PNJ</h3>
+                <ul class="liste-images">
+                    <li><img src="../ressources/images/275px-OoT3D_Skulltula_Model.png" alt="skulltula"></li>
+                </ul>
+            </section>
+        </div>
+
+    </main>    
 
     <a id="topButton" class="top-link" title="Revenir en haut de page">
         <span class="arrow-circle-up"></span>
