@@ -187,7 +187,7 @@ header {
 }
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
     width: 50px;
@@ -201,7 +201,7 @@ header {
 }
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
 }
@@ -570,7 +570,7 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
+    background: url('../ressources/icons/fleche_haut.svg') center/contain no-repeat;
 }
 
 footer {
@@ -693,7 +693,7 @@ footer img {
 }
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
 }
@@ -1062,7 +1062,7 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
+    background: url('../ressources/icons/fleche_haut.svg') center/contain no-repeat;
 }
 
 footer {

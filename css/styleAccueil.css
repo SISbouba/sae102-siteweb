@@ -64,7 +64,7 @@ body{
 .hero-image {
     width: 100%;
     height: 400px;
-    background: url('/ressources/images/the_moon-min.png') center/cover no-repeat;
+    background: url('../ressources/images/the_moon-min.png') center/cover no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -118,7 +118,7 @@ header {
 }
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
 }
@@ -314,7 +314,7 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
+    background: url('../ressources/icons/fleche_haut.svg') center/contain no-repeat;
 }
 
 
