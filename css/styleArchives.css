@@ -225,7 +225,7 @@ main {
 
 /* Style de la Barre de Recherche */
 
-#section-title {
+.section-title {
     text-align: center;
     /*margin: 60px 0 20px;*/
     font-size: 2em;
