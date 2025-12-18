@@ -203,8 +203,7 @@ body.sous-menu-open {
 
 main {
     flex: 1;
-    padding: 40px 80px;
-    max-width: 1200px;
+    padding: 40px 200px;
 }
 
 #title-name {

@@ -218,8 +218,7 @@ body.sous-menu-open {
 
 main {
     flex: 1;
-    padding: 40px 80px;
-    max-width: 1600px;
+    padding: 40px 200px;
     width: 100%;
 }
 
