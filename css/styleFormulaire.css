@@ -76,7 +76,7 @@ header {
 .home-logo {
     width: 60px;
     height: 60px;
-    background: url('/ressources/images/majora-icon.png') center/contain no-repeat;
+    background: url('../ressources/images/majora-icon.png') center/contain no-repeat;
 }
 
 .nav-buttons {
@@ -112,7 +112,7 @@ header {
 
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
 }
@@ -203,8 +203,7 @@ body.sous-menu-open {
 
 main {
     flex: 1;
-    padding: 40px 80px;
-    max-width: 1200px;
+    padding: 40px 200px;
 }
 
 #title-name {
@@ -331,7 +330,7 @@ textarea {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/images/fleche_haut.svg') center/contain no-repeat;
+    background: url('../ressources/images/fleche_haut.svg') center/contain no-repeat;
 }
 
 
@@ -479,7 +478,7 @@ footer img {
         display: inline-block;
         width: 24px;
         height: 24px;
-        background: url('/images/fleche_haut.svg') center/contain no-repeat;
+        background: url('../ressources/icons/fleche_haut.svg') center/contain no-repeat;
     }
 
 

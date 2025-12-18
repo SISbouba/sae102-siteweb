@@ -113,7 +113,7 @@ header {
 }
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
     width: 50px;
@@ -127,7 +127,7 @@ header {
 }
 
 #navMenuBtn {
-    background-image: url('/ressources/icons/nav-logo.png');
+    background-image: url('../ressources/icons/nav-logo.png');
     border: none;
     cursor: pointer;
 }
@@ -218,8 +218,7 @@ body.sous-menu-open {
 
 main {
     flex: 1;
-    padding: 40px 80px;
-    max-width: 1600px;
+    padding: 40px 200px;
     width: 100%;
 }
 
@@ -497,7 +496,7 @@ main {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url('/ressources/icons/fleche_haut.svg') center/contain no-repeat;
+    background: url('../ressources/icons/fleche_haut.svg') center/contain no-repeat;
 }
 
 footer {
